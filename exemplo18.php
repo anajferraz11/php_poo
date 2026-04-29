@@ -41,7 +41,7 @@ class Conta
 
    function transferir($outraConta, $valor)
    {
-      if ($this->saldo > $valor) {
+      if ($this->saldo > $valor ) {
         $this->debitar($valor);
         $outraConta->creditar($valor);
       }
